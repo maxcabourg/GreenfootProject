@@ -26,13 +26,11 @@ public class Personnage extends Actor
     {
         // Add your action code here.
         if(Greenfoot.isKeyDown("up"))
-            setLocation(getX(), (getY()-(Partie.HEIGHT/Partie.NOMBRE_LIGNES)));
-        else if(Greenfoot.isKeyDown("down"))
-            setLocation(getX(), (getY()+(Partie.HEIGHT/Partie.NOMBRE_LIGNES)));
+            setLocation(getX(), (getY()-Partie.HAUTEUR_CASE));
         else if(Greenfoot.isKeyDown("right"))
-            setLocation(getX()+(Partie.WIDTH/Partie.NOMBRE_COLONNES), getY());
+            setLocation(getX()+Partie.LARGEUR_CASE, getY());
         else if(Greenfoot.isKeyDown("left"))
-            setLocation(getX()-(Partie.WIDTH/Partie.NOMBRE_COLONNES), getY());
+            setLocation(getX()-Partie.LARGEUR_CASE, getY());
     }
     
     private void gestionClavier()
