@@ -1,7 +1,7 @@
 #Greenfoot properties
-#Fri Mar 04 16:15:00 CET 2016
+#Fri Mar 04 19:00:50 CET 2016
 readme.name=@README
-class.Partie.image=board.jpg
+class.Partie.image=cell.jpg
 class.Vehicule.superclass=greenfoot.Actor
 target1.type=ClassTarget
 package.numTargets=1
