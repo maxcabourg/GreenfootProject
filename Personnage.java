@@ -24,19 +24,19 @@ public class Personnage extends Actor
     public void act() 
     {
         // Add your action code here.
-        gestionClavier();
+        if(Greenfoot.isKeyDown("up"))
+            setLocation(getX(), (getY()-(Partie.HEIGHT/Partie.NOMBRE_LIGNES)));
+        else if(Greenfoot.isKeyDown("down"))
+            setLocation(getX(), (getY()+(Partie.HEIGHT/Partie.NOMBRE_LIGNES)));
+        else if(Greenfoot.isKeyDown("right"))
+            setLocation(getX()+(Partie.WIDTH/Partie.NOMBRE_COLONNES), getY());
+        else if(Greenfoot.isKeyDown("left"))
+            setLocation(getX()-(Partie.WIDTH/Partie.NOMBRE_COLONNES), getY());
     }
     
     private void gestionClavier()
     {
-        if(Greenfoot.isKeyDown("up"))
-            setLocation(getX(), (getY()%Partie.NOMBRE_LIGNES)-(Partie.HEIGHT/Partie.NOMBRE_LIGNES));
-        else if(Greenfoot.isKeyDown("down"))
-            setLocation(getX(), (getY()%Partie.NOMBRE_LIGNES)+(Partie.HEIGHT/Partie.NOMBRE_LIGNES));
-        else if(Greenfoot.isKeyDown("right"))
-            setLocation(getX()+(Partie.WIDTH%Partie.NOMBRE_COLONNES), getY());
-        else if(Greenfoot.isKeyDown("left"))
-            setLocation(getX()-(Partie.WIDTH%Partie.NOMBRE_COLONNES), getY());
+        
     }
     
     public int getX()
