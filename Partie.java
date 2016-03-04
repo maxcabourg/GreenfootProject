@@ -29,7 +29,7 @@ public class Partie extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(WIDTH, HEIGHT, 1);
         personnage = new Personnage();
-        addObject(personnage, personnage.getX(), personnage.getY()); //On demarre au milieu de la ligne
+        addObject(personnage, Partie.WIDTH/2,Partie.HEIGHT); //On demarre au milieu de la ligne
         score = 0;
     }
     

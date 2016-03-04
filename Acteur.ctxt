@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Acteur
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Acteur\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=Acteur()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Acteur\r\n
+comment2.params=bloquant
+comment2.target=void\ setBloquant(boolean)
+comment3.params=
+comment3.target=int\ getWidth()
+comment4.params=a
+comment4.target=boolean\ collisionX(Acteur)
+comment5.params=a
+comment5.target=boolean\ collisionY(Acteur)
+comment6.params=a
+comment6.target=boolean\ collision(Acteur)
+numComments=7

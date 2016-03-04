@@ -6,8 +6,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Decor extends Actor
+public class Decor extends Acteur
 {
+    
+    public Decor(){
+        super();
+    }
+    
     /**
      * Act - do whatever the Decor wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
