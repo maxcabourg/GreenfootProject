@@ -19,6 +19,7 @@ public class Personnage extends Actor
     {
         x = Partie.WIDTH/2;
         y = Partie.HEIGHT;
+        getImage().scale(Partie.LARGEUR_CASE, Partie.HAUTEUR_CASE);
     }
     
     public void act() 

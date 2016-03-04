@@ -13,6 +13,8 @@ public class Partie extends World
     public static final int HEIGHT = 800;
     public static final int NOMBRE_LIGNES = 20;
     public static final int NOMBRE_COLONNES = 20;
+    public static final int HAUTEUR_CASE = HEIGHT / NOMBRE_LIGNES;
+    public static final int LARGEUR_CASE = WIDTH / NOMBRE_COLONNES;
     
     private int score;
     private Personnage personnage;
