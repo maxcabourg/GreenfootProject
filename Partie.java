@@ -1,4 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.*;
 
 /**
  * Write a description of class Partie here.
@@ -18,6 +19,7 @@ public class Partie extends World
     
     private int score;
     private Personnage personnage;
+    private ArrayList<Acteur> acteurs; //Vehicules et autres
 
     /**
      * Constructor for objects of class Partie.
@@ -28,13 +30,17 @@ public class Partie extends World
 
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(WIDTH, HEIGHT, 1);
+        acteurs = new ArrayList<Acteur>();
         personnage = new Personnage();
         addObject(personnage, Partie.WIDTH/2,Partie.HEIGHT); //On demarre au milieu de la ligne
         score = 0;
+        Vehicule v = new Vehicule(2);
+        acteurs.add(v);
+        addObject(v, 0, Partie.HEIGHT/2);
     }
     
     public void act()
     {
-        personnage.act();
+
     }
 }

@@ -8,9 +8,9 @@ import greenfoot.*;
 public abstract class Acteur extends Actor 
 {
     // instance variables - replace the example below with your own
-    private int width = Partie.LARGEUR_CASE;// largeur de l'acteur, une case par défaut
-    private boolean bloquant; //indique si l'acteur bloque les autres, typiquement un sol ne bloque pas et un arbre bloque
-    private double vitesseAuto; //vitesse à laquelle évolue l'acteur sans intervention extérieur
+    protected int width = Partie.LARGEUR_CASE;// largeur de l'acteur, une case par défaut
+    protected boolean bloquant; //indique si l'acteur bloque les autres, typiquement un sol ne bloque pas et un arbre bloque
+    protected double vitesseAuto; //vitesse à laquelle évolue l'acteur sans intervention extérieur
     
 
     /**

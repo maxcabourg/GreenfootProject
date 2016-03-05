@@ -24,6 +24,11 @@ public class Personnage extends Acteur
     
     public void act() 
     {
+        gestionClavier();
+    }
+    
+    private void gestionClavier()
+    {
         if(Greenfoot.isKeyDown("up")){
             setLocation(getX(), (getY()-Partie.HAUTEUR_CASE));
         }else if(Greenfoot.isKeyDown("right")){
@@ -31,11 +36,6 @@ public class Personnage extends Acteur
         }else if(Greenfoot.isKeyDown("left")){
             setLocation(getX()-Partie.LARGEUR_CASE, getY());
         }
-    }
-    
-    private void gestionClavier()
-    {
-        
     }
     
 }
