@@ -54,10 +54,12 @@ public class Partie extends World
         if (trouve){
             this.stopped(); //On a trouve un acteurs en collision avec le personnage
             this.showText("Collision",300,400);
+            Greenfoot.stop();
         }
         
         if(personnage.getY()==0){
             this.showText("Fin de la partie",300,400);
+            Greenfoot.stop();
         }
     }
 }
