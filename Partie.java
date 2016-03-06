@@ -41,6 +41,18 @@ public class Partie extends World
     
     public void act()
     {
-
+        super.act();
+        boolean trouve = false;
+        int i=0;
+        while( !trouve && i < acteurs.size()){
+            if(personnage.collision(acteurs.get(i))){
+               trouve = true;
+            }
+            i++;
+        }
+        if (trouve){
+            this.stopped(); //On a trouve un acteurs en collision avec le personnage
+            this.showText("Collision",300,400);
+        }
     }
 }

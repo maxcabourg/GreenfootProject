@@ -16,11 +16,11 @@ public class Vehicule extends Acteur
         getImage().scale(width, Partie.HAUTEUR_CASE);
     }
     /**
-     * Act - do whatever the Vehicule wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Le vehicule avance à chaque tour et revient à gauche de l'écran dès qu'il en sort.
      */
     public void act() 
     {
+        super.act();
         if(getX()+width >= Partie.WIDTH)
             setLocation(0, getY());
         else

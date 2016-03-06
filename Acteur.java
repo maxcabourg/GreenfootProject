@@ -40,12 +40,20 @@ public abstract class Acteur extends Actor
             return true;
         }
         
-        return false;
+        return this.getX()==a.getX();
    
     }
     
     //Indique si l'acteur et l'acteur passé en paramètre sont en collision en Y
     private boolean collisionY(Acteur a){
+        if (this.getY()<a.getY() && a.getY()<this.getY()+Partie.HAUTEUR_CASE){// le point d'origine de "a" est compris entre this.x et sa largeur
+            return true;
+        }
+        
+        if (a.getY()<this.getY() && this.getY()<a.getY()+Partie.HAUTEUR_CASE){// le point au bout de "a" a dépassé l'origine de this, donc collision
+            return true;
+        }
+        
         return this.getY()==a.getY();
     }
     

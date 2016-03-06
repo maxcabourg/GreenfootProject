@@ -5,5 +5,5 @@ comment1.params=nbCases
 comment1.target=Vehicule(int)
 comment2.params=
 comment2.target=void\ act()
-comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Vehicule\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.text=\r\n\ Le\ vehicule\ avance\ \u00E0\ chaque\ tour\ et\ revient\ \u00E0\ gauche\ de\ l'\u00E9cran\ d\u00E8s\ qu'il\ en\ sort.\r\n
 numComments=3

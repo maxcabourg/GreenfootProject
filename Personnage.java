@@ -24,6 +24,7 @@ public class Personnage extends Acteur
     
     public void act() 
     {
+        super.act();
         gestionClavier();
     }
     
