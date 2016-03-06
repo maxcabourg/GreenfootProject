@@ -32,7 +32,7 @@ public class Partie extends World
         super(WIDTH, HEIGHT, 1);
         acteurs = new ArrayList<Acteur>();
         personnage = new Personnage();
-        addObject(personnage, Partie.WIDTH/2,Partie.HEIGHT); //On demarre au milieu de la ligne
+        addObject(personnage, Partie.WIDTH/2,Partie.HEIGHT);//On demarre au milieu de la ligne
         score = 0;
         Vehicule v = new Vehicule(2);
         acteurs.add(v);
@@ -41,6 +41,7 @@ public class Partie extends World
     
     public void act()
     {
+        
         super.act();
         boolean trouve = false;
         int i=0;
@@ -53,6 +54,10 @@ public class Partie extends World
         if (trouve){
             this.stopped(); //On a trouve un acteurs en collision avec le personnage
             this.showText("Collision",300,400);
+        }
+        
+        if(personnage.getY()==0){
+            this.showText("Fin de la partie",300,400);
         }
     }
 }
