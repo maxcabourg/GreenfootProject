@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.target=Vehicule
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Vehicule\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=nbCases
-comment1.target=Vehicule(int)
+comment1.params=nbCases\ vitesse
+comment1.target=Vehicule(int,\ double)
 comment2.params=
 comment2.target=void\ act()
 comment2.text=\r\n\ Le\ vehicule\ avance\ \u00E0\ chaque\ tour\ et\ revient\ \u00E0\ gauche\ de\ l'\u00E9cran\ d\u00E8s\ qu'il\ en\ sort.\r\n

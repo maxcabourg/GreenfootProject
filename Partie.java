@@ -34,9 +34,15 @@ public class Partie extends World
         personnage = new Personnage();
         addObject(personnage, Partie.WIDTH/2,Partie.HEIGHT);//On demarre au milieu de la ligne
         score = 0;
-        Vehicule v = new Vehicule(2);
+        Vehicule v = new Vehicule(2, Vehicule.MOYEN);
         acteurs.add(v);
         addObject(v, 0, Partie.HEIGHT/2);
+        Vehicule v1 = new Vehicule(3, Vehicule.LENT);
+        acteurs.add(v1);
+        addObject(v1, 0, Partie.HEIGHT/2+Partie.HAUTEUR_CASE);
+        Vehicule v2 = new Vehicule(2, Vehicule.RAPIDE);
+        acteurs.add(v2);
+        addObject(v2, 0, Partie.HEIGHT/2-Partie.HAUTEUR_CASE);
     }
     
     public void act()

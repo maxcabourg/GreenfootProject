@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Sun Mar 06 14:26:02 CET 2016
+#Mon Mar 07 16:16:14 CET 2016
 target4.type=AbstractTarget
 dependency3.from=Acteur
 target3.height=50
@@ -52,7 +52,7 @@ dependency6.type=UsesDependency
 target1.type=ClassTarget
 target7.y=10
 target7.x=160
-editor.swing.0.width=701
+editor.swing.0.width=700
 target7.name=Partie
 editor.swing.0.y=0
 class.Partie.image=cell.jpg
