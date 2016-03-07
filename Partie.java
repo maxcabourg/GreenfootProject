@@ -9,7 +9,7 @@ import java.util.*;
  */
 public class Partie extends World
 {
-    
+    private GreenfootSound son_Ambiance = new GreenfootSound("Voiture_qui_passe.wav");
     public static final int WIDTH = 600;
     public static final int HEIGHT = 800;
     public static final int NOMBRE_LIGNES = 20;
@@ -21,6 +21,16 @@ public class Partie extends World
     private Personnage personnage;
     private ArrayList<Acteur> acteurs; //Vehicules et autres
 
+    public void started()
+    {
+        son_Ambiance.playLoop();
+    }
+    
+    public void stopped()
+    {
+        son_Ambiance.stop();
+    }
+    
     /**
      * Constructor for objects of class Partie.
      * 
@@ -60,6 +70,7 @@ public class Partie extends World
         if (trouve){
             this.stopped(); //On a trouve un acteurs en collision avec le personnage
             this.showText("Collision",300,400);
+            Greenfoot.playSound("crash.mp3");
             Greenfoot.stop();
         }
         
